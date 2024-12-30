@@ -3,7 +3,7 @@
 import { useDispatch } from 'react-redux';
 import { addStudent } from '../../redux/slices/studentSlice';
 
-const StudentForm = () => {
+const TeacherForm = () => {
     const dispatch = useDispatch();
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -16,10 +16,10 @@ const StudentForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" name="name" placeholder="Student Name" required />
-            <button type="submit">Add Student</button>
+            <input type="text" name="name" placeholder="Teacher Name" required />
+            <button type="submit">Add Teacher</button>
         </form>
     );
 };
 
-export default StudentForm;
+export default TeacherForm;
